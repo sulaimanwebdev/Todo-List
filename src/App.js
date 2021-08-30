@@ -1,21 +1,24 @@
-import React, {useState} from 'react';
-import Index from './Index.css';
-function App(){
-const [name, changeName] = useState('Muhammad Sulaiman')
+import './Index.css';
 
-function ok(){
-  changeName('Muhammad Sulaiman The Best Programmer')
-}
+import Counter from './Counter'
 
-    return(
-      <div className="pa">
-         <div className="ch">
-         <span>{name}</span>
-           <button onClick={ok}>Click Me</button>
-         </div>
-       </div>
-      
-    )
+function App() {
+
+
+  return (
+    <>
+    <div className="pa">
+      <div className="ch">
+
+<Counter/>
+        
+      </div>
+    </div>
+
+</>
+
+  )
+  
 }
 
 export default App;
